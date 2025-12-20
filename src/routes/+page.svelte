@@ -1,3 +1,10 @@
+<script lang="ts">
+    function settingsMarkdown() {
+    // Placeholder for settings functionality
+    alert('Settings functionality is not implemented yet.');
+  }
+</script>
+
 <div class="editor-wrapper">
 <h1>welcome to cairn!</h1>
 <p>cairn is your personal space for thoughts and ideas. notes, random thoughts, chilling, work, all can be done here. dive right in!</p>
@@ -28,4 +35,5 @@
     <span class="spacer4">/</span>
     </center>
   </nav>
+  <button class="settings-btn" on:click={settingsMarkdown}>settings</button>
 </footer>

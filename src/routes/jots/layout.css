@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 html, body {
   height: 100%;
   margin: 0;
   font-family: system-ui, sans-serif;
-  color: #1d1d20
+  color: #1d1d20;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .editor-wrapper {
@@ -53,22 +56,6 @@ nav{
   .save-btn {
     position: fixed;
     bottom: 5px;
-    right: 64px;
-    background-color: #cfccbeff;
-    color: #1d1d20;
-    font-size: 12px;
-    border: none;
-    border-radius: 15px;
-    padding: 0.1rem 0.3rem;
-    cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: background 0.2s, transform 0.1s;
-  }
-
- /* Floating save button */
-  .settings-btn {
-    position: fixed;
-    bottom: 5px;
     right: 5px;
     background-color: #cfccbeff;
     color: #1d1d20;
@@ -80,6 +67,8 @@ nav{
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: background 0.2s, transform 0.1s;
   }
+
+
 
 .tiptap p.is-editor-empty:first-child::before {
   content: attr(data-placeholder);
@@ -95,10 +84,6 @@ nav{
     transform: scale(1.05);
   }
 
-    .settings-btn:hover {
-    background-color: #90846d;
-    transform: scale(1.05);
-  }
 
   /* Kill browser focus ring */
 .editor,

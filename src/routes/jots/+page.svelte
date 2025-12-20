@@ -40,11 +40,6 @@
     document.body.removeChild(a);
     URL.revokeObjectURL(a.href);
   }
-
-  function settingsMarkdown() {
-    // Placeholder for settings functionality
-    alert('Settings functionality is not implemented yet.');
-  }
 </script>
 
 <div class="editor-wrapper">
@@ -64,6 +59,6 @@
     <a href="/timer">timer</a>
     <span class="spacer4">/</span>
     </center>
-    <button class="save-btn" on:click={saveMarkdown}>save</button><button class="settings-btn" on:click={settingsMarkdown}>settings</button>
+    <button class="save-btn" on:click={saveMarkdown}>save</button>
   </nav>
 </footer>
