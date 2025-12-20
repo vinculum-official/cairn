@@ -42,6 +42,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>Cairn — Jots</title>
+</svelte:head>
+
 <div class="editor-wrapper">
   <div bind:this={editorEl} class="editor"></div>
 </div>

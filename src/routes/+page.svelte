@@ -5,6 +5,10 @@
   }
 </script>
 
+<svelte:head>
+  <title>Cairn — Home</title>
+</svelte:head>
+
 <div class="editor-wrapper">
 <h1>welcome to cairn!</h1>
 <p>cairn is your personal space for thoughts and ideas. notes, random thoughts, chilling, work, all can be done here. dive right in!</p>

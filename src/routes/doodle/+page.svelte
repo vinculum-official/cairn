@@ -67,6 +67,11 @@ function saveCanvas() {
 }
 
 </script>
+
+<svelte:head>
+  <title>Cairn — Doodle</title>
+</svelte:head>
+
   <button class="btn" on:click={() => mode = 'paint'} class:active={mode === 'paint'}>
     paint
   </button>

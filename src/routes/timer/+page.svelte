@@ -24,6 +24,10 @@
 	}
 </script>
 
+<svelte:head>
+  <title>Cairn — Pomodoro Timer</title>
+</svelte:head>
+
 <div class="editor-wrapper">
 <center>
     <h1>pomodoro timer</h1>
