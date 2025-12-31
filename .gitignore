@@ -1,6 +1,6 @@
 test-results
 node_modules
-tauriapp
+src-tauri
 
 # Output
 .output
