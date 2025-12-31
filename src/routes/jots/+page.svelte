@@ -63,6 +63,6 @@
     <a href="/timer">timer</a>
     <span class="spacer4">/</span>
     </center>
-    <button class="save-btn" on:click={saveMarkdown}>save</button>
+    <button class="settings-btn" on:click={saveMarkdown}>save</button>
   </nav>
 </footer>

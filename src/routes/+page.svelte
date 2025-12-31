@@ -1,12 +1,28 @@
 <script lang="ts">
-    function settingsMarkdown() {
-    // Placeholder for settings functionality
-    alert('Settings functionality is not implemented yet.');
-  }
+  import { onMount } from 'svelte';
+
+  let theme: 'light' | 'dark' = 'light';
+
+  function toggleTheme() {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('cairn-theme', next);
+}
+  onMount(() => {
+    const saved = localStorage.getItem('cairn-theme') || 'light';
+    theme = saved as 'light' | 'dark';
+    document.documentElement.setAttribute('data-theme', saved);
+  });
 </script>
 
 <svelte:head>
   <title>Cairn — Home</title>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+/>
 </svelte:head>
 
 <div class="editor-wrapper">
@@ -39,5 +55,10 @@
     <span class="spacer4">/</span>
     </center>
   </nav>
-  <button class="settings-btn" on:click={settingsMarkdown}>settings</button>
+  <button class="settings-btn" on:click={toggleTheme}>
+  <span class="material-symbols-rounded">
+    {theme === 'dark' ? 'light_mode' : 'dark_mode'}
+  </span>
+</button>
+
 </footer>
