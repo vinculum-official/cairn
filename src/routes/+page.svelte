@@ -4,12 +4,12 @@
   let theme: 'light' | 'dark' = 'light';
 
   function toggleTheme() {
-    const current = document.documentElement.getAttribute('data-theme');
-    const next = current === 'dark' ? 'light' : 'dark';
+  theme = theme === 'dark' ? 'light' : 'dark';
 
-    document.documentElement.setAttribute('data-theme', next);
-    localStorage.setItem('cairn-theme', next);
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('cairn-theme', theme);
 }
+
   onMount(() => {
     const saved = localStorage.getItem('cairn-theme') || 'light';
     theme = saved as 'light' | 'dark';

@@ -7,7 +7,7 @@
 :root {
   --bg: #f1efe5ff;
   --surface: #f5f5f5;
-  --fg: #1d1d20;
+  --fg: #26262a;
   --accent: #cfccbeff;
   --accent-hover: #90846d;
   --muted: #888;
@@ -15,7 +15,7 @@
 }
 
 html[data-theme="dark"] {
-  --bg: #1d1d20;
+  --bg: #26262a;
   --surface: #26262a;
   --fg: #f2ecce;
   --accent: #a89f7a;
@@ -32,10 +32,14 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: "Host Grotesk", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   background: var(--bg);
   color: var(--fg);
   transition: background 0.2s ease, color 0.2s ease;
+}
+
+a {
+  color: #766d46ab;
 }
 
 /* =====================
@@ -187,7 +191,7 @@ canvas {
   left: 15px;
   width: 98%;
   height: 92%;
-  background: transparent;
+  background: #26262a;
   cursor: crosshair;
   outline: 2px dashed var(--outline);
 }
@@ -196,6 +200,12 @@ canvas {
 
 .editor {
   outline: 2px dashed var(--outline) !important;
+}
+
+/* Main */
+
+main {
+  background: #26262a;
 }
 
 /* CAIRN IS LOVE, CAIRN IS LIFE */
