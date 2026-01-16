@@ -8,7 +8,12 @@
   let mode: 'paint' | 'erase' = 'paint';
 
   const brushSize = 6;
-  const color = '#1d1d20';
+  let color: string = "#1d1d20"; // default (light)
+
+  function updateColor() {
+    const theme = document.documentElement.getAttribute("data-theme");
+    color = theme === "dark" ? "#f2ecce" : "#1d1d20";
+  }
 
   function resize() {
     canvas.width = window.innerWidth;
@@ -22,6 +27,8 @@
 
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
+
+    updateColor(); // read theme safely
   });
 
   function getPos(e: MouseEvent) {
@@ -35,13 +42,13 @@
   function down(e: MouseEvent) {
     drawing = true;
     const { x, y } = getPos(e);
-
     ctx.beginPath();
     ctx.moveTo(x, y);
   }
 
   function move(e: MouseEvent) {
     if (!drawing) return;
+
     const { x, y } = getPos(e);
 
     ctx.globalCompositeOperation =
@@ -58,15 +65,15 @@
     drawing = false;
     ctx.closePath();
   }
-function saveCanvas() {
-  if (!canvas) return;
-  const link = document.createElement('a');
-  link.download = 'drawing.png';             // filename
-  link.href = canvas.toDataURL('image/png'); // export canvas as PNG
-  link.click();
-}
 
+  function saveCanvas() {
+    const link = document.createElement('a');
+    link.download = 'drawing.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  }
 </script>
+
 
 <svelte:head>
   <title>Cairn — Doodle</title>
