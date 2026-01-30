@@ -191,3 +191,19 @@
     {/each}
   </div>
 </div>
+
+<footer>
+      <nav>
+        <center>
+          <span class="spacer">/</span>
+          <a href="/">home</a>
+          <span class="spacer0">/</span>
+          <a class="active" href="/jots">jots</a>
+          <span class="spacer1">/</span>
+          <a href="/doodle">doodle</a>
+          <span class="spacer3">/</span>
+        </center>
+        <button class="settings-btn" on:click={saveMarkdown}>save</button>
+        <button class="settings-btn" on:click={closeEditor}>close</button>
+      </nav>
+    </footer>
