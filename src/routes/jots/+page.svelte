@@ -203,7 +203,5 @@
           <a href="/doodle">doodle</a>
           <span class="spacer3">/</span>
         </center>
-        <button class="settings-btn" on:click={saveMarkdown}>save</button>
-        <button class="settings-btn" on:click={closeEditor}>close</button>
       </nav>
     </footer>
