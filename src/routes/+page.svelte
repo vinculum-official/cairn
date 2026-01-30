@@ -51,8 +51,6 @@
     <span class="spacer1">/</span>
     <a href="/doodle">doodle</a>
     <span class="spacer3">/</span>
-    <a href="/timer">timer</a>
-    <span class="spacer4">/</span>
     </center>
   </nav>
   <button class="settings-btn" on:click={toggleTheme}>
