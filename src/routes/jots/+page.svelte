@@ -60,8 +60,6 @@
     <span class="spacer1">/</span>
     <a href="/doodle">doodle</a>
     <span class="spacer3">/</span>
-    <a href="/timer">timer</a>
-    <span class="spacer4">/</span>
     </center>
     <button class="settings-btn" on:click={saveMarkdown}>save</button>
   </nav>

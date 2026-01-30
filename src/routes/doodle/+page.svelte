@@ -233,8 +233,6 @@
     <span class="spacer1">/</span>
     <a class="active" href="/doodle">doodle</a>
     <span class="spacer3">/</span>
-    <a href="/timer">timer</a>
-    <span class="spacer4">/</span>
     </center>
   </nav>
 </footer>
