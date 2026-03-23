@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { signInWithGitHub } from '$lib/auth'
+  //import { signInWithGitHub } from '$lib/auth'
 </script>
 
-
+<!--
 <svelte:head>
   <title>Cairn — Login</title>
 <link
@@ -12,8 +12,12 @@
 </svelte:head>
 
 <main>
+
 <p>cairn is a productivity tool. it has (currently) notes, and a drawing tool.</p>
 <button on:click={signInWithGitHub}>
   Sign in with GitHub
 </button>
 </main>
+-->
+
+<p>cairn is offline because of supabase not working in india right now</p>
