@@ -1,6 +1,6 @@
 <script lang="ts">
   import { user } from '$lib/stores/auth';
-  import { supabase } from '$lib/supabase'; // <-- add this
+  import { supabase } from '$lib/supabase.client'; // <-- add this
   import { goto } from '$app/navigation';
   import { onMount } from 'svelte';
   import './theme.css';

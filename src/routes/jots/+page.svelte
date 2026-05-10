@@ -5,7 +5,7 @@
   import { Markdown } from '@tiptap/markdown';
   import Placeholder from '@tiptap/extension-placeholder';
   import HardBreak from '@tiptap/extension-hard-break';
-  import { supabase } from '$lib/supabase';
+  import { supabase } from '$lib/supabase.client';
   import { user } from '$lib/stores/auth';
   import { writable, get } from 'svelte/store';
 

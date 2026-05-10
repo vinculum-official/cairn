@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 import type { User } from '@supabase/supabase-js'; // import User type
-import { supabase } from '$lib/supabase';
+import { supabase } from '$lib/supabase.client';
 
 // fix: writable can hold User or null
 export const user = writable<User | null>(null);
